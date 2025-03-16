@@ -1,0 +1,140 @@
+/* Reset y estilos globales */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background: linear-gradient(#1354A5 0%, #041832 33.33%, #041832 66.67%, #01080E 100%);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+/* Imagen de fondo con opacidad */
+body::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("img/code.png"); 
+  background-repeat: no-repeat;
+  background-position: right;
+  opacity: 0.4;
+  z-index: -1;
+}
+
+.container {
+  width: 1200px;
+  max-width: 90%;
+  padding: 20px;
+  background-image: url("img/Ruido.png");
+  background-size: cover;
+  border-radius: 24px;
+  border: 1px solid #1875E8;
+  box-shadow: 4px 4px 20px 0px rgba(1, 8, 14, 0.15);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1#titulo {
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: 72px;
+  margin-bottom: 2rem;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  width: 100%;
+}
+
+.left-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 70%;
+}
+
+.desafio {
+  background-color: rgba(1, 8, 14, 0.6);
+  border-radius: 16px;
+  border: 1px solid #1875E8;
+  padding: 20px;
+}
+
+.desafio h2 {
+  font-size: 36px;
+  margin-bottom: 1rem;
+}
+
+.right-section {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.log-container {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #1875E8;
+  background: #041832;
+  border-radius: 16px;
+  height: 850px;
+  max-height: 850px;
+  overflow-y: scroll; 
+  /* margin-top: 20px;*/
+  font-size: 18px;
+}
+
+
+/* Botones */
+button {
+  border-radius: 16px;
+  background: #1875E8;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: 700;
+  border: none;
+  margin: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #0d5aa7;
+}
+
+button:disabled {
+  background: #898989;
+}
+
+.dialog-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.dialog-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  color: black; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}

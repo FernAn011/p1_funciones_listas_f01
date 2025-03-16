@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Inter:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Ejercicios de JavaScript</title>
+</head>
+<body>
+    <div class="container">
+      <h1 id="titulo">EJERCICIOS DE JAVASCRIPT</h1>
+      
+      <div class="main-content">
+        <div class="left-section">
+          <div class="desafio">
+            <h2>Desafío 1</h2>
+            <button onclick="cambiarTitulo()">Cambiar Título</button>
+            <button onclick="mostrarEnConsola()">Console</button>
+            <button onclick="preguntarCiudad()">Prompt</button>
+            <button onclick="mostrarAlerta()">Alerta</button>
+            <button onclick="sumarNumeros()">Suma</button>
+          </div>
+  
+          <div class="desafio">
+            <h2>Desafío 2</h2>
+            <button onclick="holaMundo()">Hola Mundo</button>
+            <button onclick="dobleNumero()">Doble de un Número</button>
+            <button onclick="promedioTres()">Promedio de 3 Números</button>
+            <button onclick="numeroMayor()">Número Mayor</button>
+            <button onclick="cuadradoNumero()">Cuadrado de un Número</button>
+          </div>
+  
+          <div class="desafio">
+            <h2>Desafío 3</h2>
+            <button onclick="calcularIMC()">Calcular IMC</button>
+            <button onclick="calcularFactorial()">Factorial</button>
+            <button onclick="convertirDolares()">Conversión de Moneda</button>
+            <button onclick="areaPerimetroRect()">Área y Perímetro Rect</button>
+            <button onclick="areaPerimetroCirculo()">Área y Perímetro Circ</button>
+            <button onclick="tablaMultiplicar()">Tabla de Multiplicar</button>
+          </div>
+  
+          <div class="desafio">
+            <h2>Desafío 4</h2>
+            <button onclick="crearListas()">Crear Listas</button>
+            <button onclick="mostrarLista()">Mostrar Lista</button>
+            <button onclick="mostrarListaInversa()">Lista Inversa</button>
+            <button onclick="promedioLista()">Promedio Lista</button>
+            <button onclick="minMaxLista()">Mínimo y Máximo</button>
+            <button onclick="sumarLista()">Suma de Lista</button>
+            <button onclick="buscarEnLista()">Buscar en Lista</button>
+            <button onclick="sumarListas()">Suma de Listas</button>
+            <button onclick="cuadradoLista()">Cuadrado de Lista</button>
+          </div>
+        </div>
+        
+        <!-- contenedor de logs -->
+        <div class="right-section">
+          <div class="log-container" id="log">
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <script src="app.js"></script>
+    <script>
+      function log(mensaje) {
+        document.getElementById('log').innerHTML += mensaje + '<br>';
+      }
+    </script>
+</body>
+</html>
